@@ -1,0 +1,12 @@
+Options -Indexes
+
+<FilesMatch "^(composer\.(json|lock)|schema\.sql|\.env.*)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^vendor(?:/|$) - [F,L]
+</IfModule>
+
+Redirect 301 /contact.html /contact.php

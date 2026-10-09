@@ -118,6 +118,9 @@ p { margin: 1rem 0 0; }
 .field textarea { min-height: 9rem; resize: vertical; }
 .contact-form .button { justify-self: start; }
 .form-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .9rem; }
+.form-note[role="status"] { padding: .85rem 1rem; border-radius: .65rem; background: #edf4ec; color: #315c35; }
+.form-note[role="alert"] { padding: .85rem 1rem; border-radius: .65rem; background: #f8ece7; color: #773b2a; }
+.form-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
 .site-footer { padding: 2rem 0; background: #10051f; color: #cbbce2; font-size: .9rem; }
 .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
@@ -148,7 +151,6 @@ p { margin: 1rem 0 0; }
   .wrap { width: min(100% - 2rem,1320px); }
   .logo-descriptor { display: none; }
   .bar { min-height: 68px; }
-  .logo { font-size: 1.55rem; }
   .home-hero { padding: 8rem 0 3rem; }
   .home-copy h1 { font-size: clamp(3rem,14vw,4.5rem); }
   .page-hero { padding: 8rem 0 3rem; }
